@@ -9,6 +9,7 @@ import (
 type (
 	IRepo interface {
 		Create(product *productModel.Product) (err error)
+		List(reqQuery *productModel.ListReqQuery) (resData []productModel.ListProductResData, count int64, err error)
 
 	}
 	

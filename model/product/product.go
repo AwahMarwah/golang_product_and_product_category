@@ -1,6 +1,8 @@
 package product
 
 import (
+	"time"
+
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 )
@@ -11,6 +13,7 @@ type Product struct {
 	Name        string
 	Description string
 	CategoryId  string
+	CreatedAt   time.Time
 }
 
 func (product *Product) BeforeCreate(*gorm.DB) error {

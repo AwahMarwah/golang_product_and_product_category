@@ -19,6 +19,7 @@ func Run(db database.DB) (err error) {
 	{
 		productController := product.NewController(db.GormDb)
 		productGroup.POST("", productController.Create)
+		productGroup.GET("", productController.List)
 		
 	}
 	productCategoryController := productCategory.NewController(db.GormDb)
