@@ -5,4 +5,5 @@ const (
 	SuccessfullyCreated         = "successfully created"
 	UnexpectedNewline           = "unexpected newline"
 	ProductCategoryAlreadyExist = "product category already exist"
+	ProductCategoryNotFound     = "product category not found"
 )
