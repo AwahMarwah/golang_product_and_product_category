@@ -7,6 +7,7 @@ import (
 
 type (
 	IService interface {
+		List() (resData []productCategoryModel.ListProductCategory, err error)
 		Seed(productCategory *productCategoryModel.ProductCategory)(err error)
 	}
 

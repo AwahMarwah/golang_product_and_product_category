@@ -9,6 +9,7 @@ import (
 type (
 	IRepo interface {
 		Create(productCategory *productCategoryModel.ProductCategory) (err error)
+		List() (resData []productCategoryModel.ListProductCategory, err error)
 		Take(selectParams []string, conditions *productCategoryModel.ProductCategory) (productCategory productCategoryModel.ProductCategory, err error)
 	}
 
